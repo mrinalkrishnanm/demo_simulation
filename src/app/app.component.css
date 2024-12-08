@@ -1,0 +1,33 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 64px; /* Default height for Material toolbar */
+    display: flex;
+  }
+  
+  /* Container for the sidebar and content */
+  .sidenav-container {
+    margin-top: 64px; /* Push content below the top bar */
+    height: calc(100vh - 64px); /* Full height minus top bar */
+    display: flex;
+  }
+  
+  /* Sidebar styles */
+  .sidenav {
+    width: 250px;
+    border-right: 1px solid #e0e0e0; /* Optional border for sidebar */
+  }
+  
+  /* Content area */
+  .content {
+    padding: 16px;
+  }
+  .sidebar-list {
+    margin-top: 40px;
+    align-items: center;
+
+  }
+
+  

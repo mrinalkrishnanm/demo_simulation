@@ -1,7 +1,33 @@
-<app-header>
-</app-header>
+<mat-toolbar color="primary" class="top-bar">
+    <app-header>
+    </app-header>
+</mat-toolbar>
 
-
-
-
-<router-outlet />
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <mat-nav-list class = 'sidebar-list'>
+        <mat-list-item (click)="switchView('home')" [class.active]="currentView === 'simulation'">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </mat-list-item>
+        <mat-list-item (click)="switchView('simulation')" [class.active]="currentView === 'simulation'">
+            <mat-icon>play_circle</mat-icon>
+            <span >Simulation</span>
+        </mat-list-item>
+        <mat-list-item (click)="switchView('settings')" [class.active]="currentView === 'settings'">
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+        </mat-list-item>
+        <mat-list-item (click)="switchView('about-us')" [class.active]="currentView === 'about-us'">
+            <mat-icon>info</mat-icon>
+            <span>About Us</span>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
