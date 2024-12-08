@@ -11,7 +11,7 @@
   .sidenav-container {
     margin-top: 64px; /* Push content below the top bar */
     height: calc(100vh - 64px); /* Full height minus top bar */
-    display: flex;
+    width: 100%;
   }
   
   /* Sidebar styles */

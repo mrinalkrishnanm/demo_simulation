@@ -7,6 +7,22 @@
     border: 1px solid #e0e0e0;
   }
   
+  .left-section {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Right Section: Graph */
+  .right-section {
+    flex: 1; 
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
   /* Text Boxes Section */
   .text-boxes {
     display: flex;
@@ -24,23 +40,21 @@
   button {
     margin-left: 10px;
   }
-  
-  /* Chart Section */
-  .chart-container {
-    flex-grow: 1;
-    min-width: 400px;
-    height: 300px;
-  }
 
-  .input-with-icon {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
   
   .form-field {
-    flex: 1;
     margin: 0;
   }
 
+  .no-background-button{
+    background-color: white;
+    padding: 5px;
+    color: grey;
+    border: 1px solid grey;
+  }
+
   
+  .no-background-button :hover {
+    background-color: "primary";
+    padding: 5px;
+  }
