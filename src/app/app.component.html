@@ -27,7 +27,9 @@
   
     <mat-sidenav-content>
       <div class="content">
-        <router-outlet></router-outlet>
+        <app-settings-wrapper *ngIf="currentView === 'settings'"></app-settings-wrapper>
+        <app-simulation-wrapper  *ngIf="currentView === 'simulation'"></app-simulation-wrapper>
+        <div></div>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>

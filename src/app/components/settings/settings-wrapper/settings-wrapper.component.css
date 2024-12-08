@@ -1,0 +1,46 @@
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  /* Text Boxes Section */
+  .text-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  /* Chart Section */
+  .chart-container {
+    flex-grow: 1;
+    min-width: 400px;
+    height: 300px;
+  }
+
+  .input-with-icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-field {
+    flex: 1;
+    margin: 0;
+  }
+
+  

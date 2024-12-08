@@ -1,0 +1,24 @@
+<div class="container">
+    <!-- Text Boxes Section -->
+    <div class="text-boxes">
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>ROI</mat-label>
+        <input matInput [value]="roiValue" disabled />
+        <button mat-raised-button color="primary" (click)="onBoxClick('ROI')">View Chart</button>
+      </mat-form-field>
+      <div class="input-with-icon">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Search</mat-label>
+          <input matInput [value]="npaValue"  disabled/>
+          <button mat-icon-button matSuffix (click)="toggleInfo('NPA')" class="no-background-button">
+            <mat-icon>{{ infoVisible ? 'info' : 'info_outline' }}</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>NPA</mat-label>
+        <input matInput [value]="npaValue" disabled />
+        <button mat-raised-button color="primary" (click)="onBoxClick('NPA')">View Chart</button>
+      </mat-form-field>
+    </div>
+  </div>
