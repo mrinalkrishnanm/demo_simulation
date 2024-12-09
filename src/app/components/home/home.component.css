@@ -1,0 +1,23 @@
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .chart-container {
+    width: 100%;
+  }
+  
+  .container {
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .sub-header-toolbar {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
+  .sub-header-title {
+    padding-left: 6px;
+  }

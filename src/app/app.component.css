@@ -25,9 +25,51 @@
     padding: 16px;
   }
   .sidebar-list {
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
     padding: 30px;
   }
 
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .footer-toolbar {
+    justify-content: center; /* Centers content horizontally */
+    height: 30px; /* Small height for a minimal footer */
+    font-size: 12px; /* Small text size */
+  }
   
+  .avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .avatar-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Diameter of the circle */
+    height: 80px; /* Diameter of the circle */
+    border-radius: 50%; /* Makes the container circular */
+    background-color: #3f51b5; /* Replace with your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    position: relative;
+  }
+  
+  .avatar-icon {
+    line-height: 1; /* Remove any extra vertical space around the icon */
+    transform: scale(1.2); /* Optionally scale the icon to fill more space */
+  }
+  
+  .avatar-name {
+    margin-top: 8px; /* Space between avatar and name */
+    font-size: 14px;
+    color: #3f51b5; /* Color for the name */
+    font-weight: 500;
+  }

@@ -8,11 +8,12 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { SimulationWrapperComponent } from './components/simulation/simulation-wrapper/simulation-wrapper.component';
 import { SettingsWrapperComponent } from './components/settings/settings-wrapper/settings-wrapper.component';
+import { HomeComponent } from './components/home/home.component';
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, CommonModule,HeaderComponent,MatSidenavModule,MatToolbarModule,
-    MatListModule,MatIconModule,SimulationWrapperComponent,SettingsWrapperComponent],
+    MatListModule,MatIconModule,SimulationWrapperComponent,SettingsWrapperComponent,HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

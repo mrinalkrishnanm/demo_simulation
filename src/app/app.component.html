@@ -5,7 +5,12 @@
 
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav mode="side" opened class="sidenav">
+     
       <mat-nav-list class = 'sidebar-list'>
+        <div class="avatar-wrapper">
+            <mat-icon class="avatar-icon">account_circle</mat-icon>
+          <span class="avatar-name">Admin</span>
+        </div>
         <mat-list-item (click)="switchView('home')" [class.active]="currentView === 'simulation'">
             <mat-icon>home</mat-icon>
             <span>Home</span>
@@ -29,6 +34,13 @@
       <div class="content">
         <app-settings-wrapper *ngIf="currentView === 'settings'"></app-settings-wrapper>
         <app-simulation-wrapper  *ngIf="currentView === 'simulation'"></app-simulation-wrapper>
+        <app-home *ngIf="currentView === 'home'"></app-home>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
+
+  <div class="footer">
+    <mat-toolbar color="secondary" class="footer-toolbar">
+      <span>© 2024 Your Company. All rights reserved.</span>
+    </mat-toolbar>
+  </div>

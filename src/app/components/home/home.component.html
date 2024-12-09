@@ -1,0 +1,36 @@
+<mat-toolbar class="sub-header-toolbar">
+    <mat-icon>home</mat-icon>
+    <span class="sub-header-title">Home</span>
+</mat-toolbar>
+<div class="container">
+    <div class="chart-grid">
+        <div class="chart-container">
+          <canvas baseChart
+                  [data]="barChartData"
+                  [type]="barChartType"
+                  [options]="barChartOptions">
+          </canvas>
+        </div>
+        <div class="chart-container">
+          <canvas baseChart
+                  [data]="lineChartData"
+                  [type]="lineChartType"
+                  [options]="lineChartOptions">
+          </canvas>
+        </div>
+        <div class="chart-container">
+          <canvas baseChart
+            [data]="barChartData2"
+            [type]="barChartType"
+            [options]="barChartOptions2">
+          </canvas>
+        </div>
+        <div class="chart-container">
+            <canvas baseChart
+                [data]="lineChartData"
+                [type]="lineChartType"
+                [options]="lineChartOptions">
+            </canvas>
+        </div>
+      </div>    
+</div>
