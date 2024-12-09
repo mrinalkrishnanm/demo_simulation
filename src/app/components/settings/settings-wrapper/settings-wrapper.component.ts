@@ -3,11 +3,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { RoiGraphComponent } from '../roi-graph/roi-graph.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-settings-wrapper',
   standalone: true,
-  imports: [MatFormFieldModule,MatInputModule,MatIconModule,RoiGraphComponent],
+  imports: [MatFormFieldModule,MatInputModule,MatIconModule,RoiGraphComponent,MatToolbarModule],
   templateUrl: './settings-wrapper.component.html',
   styleUrl: './settings-wrapper.component.css'
 })

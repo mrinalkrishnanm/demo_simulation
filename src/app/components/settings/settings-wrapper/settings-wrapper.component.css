@@ -1,5 +1,4 @@
 
-
 .container {
     display: flex;
     gap: 20px;
@@ -57,4 +56,14 @@
   .no-background-button :hover {
     background-color: "primary";
     padding: 5px;
+  }
+
+  .sub-header-toolbar {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: primary
+  }
+
+  .sub-header-title {
+    padding-left: 6px;
   }

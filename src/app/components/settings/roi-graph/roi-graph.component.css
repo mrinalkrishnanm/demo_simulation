@@ -1,0 +1,7 @@
+.chart-canvas {
+    max-width: 800px; /* Maximum width */
+    width: 100%;      /* Allow width to take up 100% of the parent, but no more than max-width */
+    height: 300px;    /* Fixed height */
+    padding: 10px;
+    height: 100%;
+  }
